@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-color:hsl(257, 40%, 49%);
+    font-family:"Open Sans",sans-serif;
+    color: rgb(241, 235, 235);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    min-height: 100px;
+}
+header img{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 50px;
+    width: 150px;
+}
+main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 78vh;
+}
+
+main .side-img img{
+    max-height:600px;
+    max-width: 600px;
+}
+main section{
+    max-width: 45%;
+    margin-bottom: 140px;
+    margin-left: 30px;
+}
+section h1{
+    max-width: 65%;
+    font-family:Poppins;
+    font-weight: 600;
+    font-size: 32px;
+}
+section p{
+    max-width: 75%;
+    margin-bottom: 40px;
+}
+section a{
+    text-decoration: none;
+    justify-content: center;
+    color: hsl(257, 40%, 49%);
+    border: 1px solid white;
+    padding: 10px 45px 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow:1px 1px 4px 2px rgb(61, 60, 60);
+}
+footer{
+    float: right;
+    margin-right: 50px;
+}
+ion-icon{
+    border: 1px solid white;
+    padding: 5px 5px 5px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+ion-icon:hover{    
+    color: hsl(300, 69%, 71%); 
+    border-color:hsl(300, 69%, 71%);  
+}
+section a:hover {
+    color: beige;
+    background-color: hsl(300, 69%, 71%); 
+    border-color:hsl(300, 69%, 71%);  
+}
+@media (max-width:1001px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+    header{
+        min-height: 80px;
+    }
+    nav {
+        margin: 0px 0px 0px;
+    }
+    nav img{
+        margin: 0px;
+        max-height: 50px;
+        max-width: 150px;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        min-height: 80vh;
+        margin: 0px;
+        padding: 0px;
+    }
+    main .side-img img{
+        max-height:500px;
+        max-width: 300px;
+        margin: 0px;
+        padding: 0px;
+    }
+    main section{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0px;
+    }
+    section h1{
+        margin: 0px 0px 0px;
+        padding:0px;
+        font-weight: 400;
+        font-size: 21px;
+    }
+    section p{
+        margin: 0px 0px 25px;
+        padding:0px;
+    }
+    section a{
+        padding: 10px 70px 10px;
+    }
+    footer{
+        position: absolute;
+        left:50%;
+        margin-top:29px ;
+        transform: translate(-50%,-50%);
+    }
+    ion-icon{
+        border: 1px solid white;
+        padding: 5px 5px 5px;
+    }
+}
